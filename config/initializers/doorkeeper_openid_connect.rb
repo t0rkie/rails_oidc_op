@@ -1,10 +1,11 @@
 # frozen_string_literal: true
 
 Doorkeeper::OpenidConnect.configure do
-  # issuer do |resource_owner, application|
-  #   'issuer string'
-  # end
-  issuer 'http://localhost:3780'
+  issuer do |resource_owner, application|
+    'issuer http://localhost:3780'
+
+  end
+  # issuer 'http://localhost:3780'
 
   # signing_key <<~KEY
   #   -----BEGIN RSA PRIVATE KEY-----
